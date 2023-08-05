@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project - Mental Health Matters by Laiken Chetty</title>
+  <title>Project - Mental Wellness</title>
   <style>
     body {
       background-color: #f7d5e1;
@@ -90,15 +90,27 @@
       opacity: 0.9;
       cursor: pointer;
     }
+    #image{
+      display: none;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1> MENTAL HEALTH MATTERS</h1>
+    <h1> MENTAL WELLNESS</h1>
     <h2><em>Never give up, your story is still being told.</em></h2>
     <hr />
     <br />
+    <button onclick="showPic()">
+      Your Motivational Quotes
+    </button>
+    <div id="image">
+  <img
+    src="https://i.pinimg.com/736x/1d/4c/9d/1d4c9d57837bb77b202f2a687bbc0ec8--happy-motivational-quotes-inspirational-health-quotes.jpg"
+    alt="Mental Wellness" width="200" />
+    </div>
+  <hr />
   </div>
   <hr />
   <img
@@ -125,7 +137,7 @@
     </button>
   <p class="footer">
     This page was developed by
-    <a href="https://chetty370.wixsite.com/mysite" target="_blank">Digital Doom Divas
+    <a href="https://www.linkedin.com/in/digital-divas-486080287/" target="_blank">Digital Doom Divas
     </a>
   </p>
   </div>
@@ -143,6 +155,10 @@
     let subscribebutton =
       document.querySelector(".subscribe-button");
     subscribebutton.addEventListener("click", subscribetoourinitiative);
+    
+  const showPic=()=>{
+    document.getElementById('image').style.display = 'block';
+  } 
   </script>
 </body>
 
